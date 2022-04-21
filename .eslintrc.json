@@ -1,13 +1,13 @@
 {
   "root": true,
   "extends": [
+    "plugin:@next/next/recommended",
+    "plugin:react-hooks/recommended",
     "eslint:recommended",
     "plugin:import/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:ramda/recommended",
     "plugin:react-redux/recommended",
-    "next",
     "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
@@ -15,11 +15,10 @@
     "@typescript-eslint",
     "import",
     "react",
-    "prefer-arrow",
-    "react-hooks",
     "simple-import-sort",
     "ramda",
     "react-redux",
+    "react-hooks",
     "prettier"
   ],
 
@@ -32,7 +31,7 @@
     "simple-import-sort/exports": "warn",
     "react/button-has-type": 1,
     "react/destructuring-assignment": 1,
-    "react/hook-use-state": 1,
+    // "react/hook-use-state": 1,
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
     "react/no-array-index-key": 2,
@@ -47,14 +46,6 @@
         "ignoreCase": true,
         "reservedFirst": true,
         "noSortAlphabetically": true
-      }
-    ],
-    "prefer-arrow/prefer-arrow-functions": [
-      "error",
-      {
-        "disallowPrototype": true,
-        "singleReturnOnly": true,
-        "classPropertiesAllowed": true
       }
     ]
   },

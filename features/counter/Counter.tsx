@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import { useAppDispatch, useAppSelector } from '../../app/hooks'
-import styles from './Counter.module.css'
+import { useAppDispatch, useAppSelector } from '@/app/hooks'
+
 import {
 	decrement,
 	increment,
@@ -18,35 +18,31 @@ function Counter() {
 
 	return (
 		<div>
-			<div className={styles.row}>
+			<div>
 				<button
 					type='submit'
-					className={styles.button}
 					aria-label='Decrement value'
 					onClick={() => dispatch(decrement())}
 				>
 					-
 				</button>
-				<span className={styles.value}>{count}</span>
+				<span>{count}</span>
 				<button
 					type='submit'
-					className={styles.button}
 					aria-label='Increment value'
 					onClick={() => dispatch(increment())}
 				>
 					+
 				</button>
 			</div>
-			<div className={styles.row}>
+			<div>
 				<input
-					className={styles.textbox}
 					aria-label='Set increment amount'
 					value={incrementAmount}
 					onChange={e => setIncrementAmount(e.target.value)}
 				/>
 				<button
 					type='submit'
-					className={styles.button}
 					onClick={() => dispatch(incrementByAmount(incrementValue))}
 				>
 					Add Amount Add Async

@@ -1,36 +1,37 @@
 {
 	"compilerOptions": {
 		"target": "es5",
-		"lib": ["DOM", "DOM.Iterable", "ESNext"],
-		"allowJs": false,
+		"lib": ["dom", "dom.iterable", "esnext"],
+		"allowJs": true,
 		"skipLibCheck": true,
-		"esModuleInterop": true,
-
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
-		"module": "ESNext",
+		"noEmit": true,
+		"esModuleInterop": true,
+		"module": "esnext",
 		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"isolatedModules": true,
 		"jsx": "preserve",
-		"noEmit": true,
-		"incremental": true
-	},
-	"ts-node": {
-		"compilerOptions": {
-			"module": "commonjs"
+		"incremental": true,
+		"baseUrl": ".",
+		"paths": {
+			"@/components/*": ["components/*"],
+			"@/pages/*": ["pages/*"],
+			"@/styles/*": ["styles/*"],
+			"@/utils/*": ["utils/*"],
+			"@/types/*": ["types/*"],
+			"@/app/*": ["app/*"],
+			"@/features/*": ["features/*"],
+			"@/services/*": ["services/*"]
 		}
 	},
-	"baseUrl": ".",
-	"paths": {
-		"*": ["src/*"]
-	},
-	"exclude": ["node_modules"],
 	"include": [
 		"next-env.d.ts",
 		"**/*.ts",
 		"**/*.tsx",
-		"src/**/*.ts",
-		"src/**/*.tsx"
-	]
+		"types.d.ts",
+		"jest.config.js"
+	],
+	"exclude": ["node_modules"]
 }

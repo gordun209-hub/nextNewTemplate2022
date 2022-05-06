@@ -29,9 +29,42 @@
 		"import/no-named-as-default-member": "off",
 		"simple-import-sort/imports": "warn",
 		"simple-import-sort/exports": "warn",
+		"@typescript-eslint/array-type": "warn",
 		"react/button-has-type": 1,
+		// delete this if you want to use the default behavior
+		"@typescript-eslint/explicit-function-return-type": [
+			"error",
+			{
+				"allowTypedFunctionExpressions": true,
+				"allowExpressions": true,
+				"allowDirectConstAssertionInArrowFunctions": true
+			}
+		],
 		"react/destructuring-assignment": 1,
+		"@typescript-eslint/consistent-type-imports": [
+			"error",
+			{
+				"prefer": "type-imports"
+			}
+		],
+
 		"no-console": "warn",
+		"@typescript-eslint/consistent-type-exports": [
+			"error",
+			{
+				"fixMixedExportsWithInlineTypeSpecifier": false
+			}
+		],
+		"@typescript-eslint/prefer-function-type": "error",
+
+		"@typescript-eslint/consistent-type-assertions": [
+			"warn",
+			{
+				"assertionStyle": "as",
+				"objectLiteralTypeAssertions": "allow"
+			}
+		],
+		"@typescript-eslint/consistent-type-definitions": ["error", "type"],
 		"react/hook-use-state": 1,
 		"react/react-in-jsx-scope": "off",
 		"react/prop-types": "off",

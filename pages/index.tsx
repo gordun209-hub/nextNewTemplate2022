@@ -3,6 +3,9 @@ import Head from 'next/head'
 
 import Counter from '@/features/counter/Counter'
 
+export type Laa = {
+	num: string
+}
 const Home: NextPage = () => {
 	return (
 		<div>

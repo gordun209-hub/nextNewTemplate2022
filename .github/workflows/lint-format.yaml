@@ -14,3 +14,5 @@ jobs:
         run: yarn eslint .
       - name: format
         run: yarn format
+      - name: test
+        run: yarn test

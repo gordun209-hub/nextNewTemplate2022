@@ -11,10 +11,10 @@ jobs:
         with:
           build: yarn build
           start: yarn start
-  unit-test:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Unit test
-        uses: yarn run test
+  # unit-test:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Checkout
+  #       uses: actions/checkout@v2
+  #     - name: Unit test
+  #       uses: yarn run test

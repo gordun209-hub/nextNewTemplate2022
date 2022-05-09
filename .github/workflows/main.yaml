@@ -8,10 +8,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Cypress run
         uses: cypress-io/github-action@v2
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Unit test
-        run: yarn test
         with:
           build: yarn build
           start: yarn start

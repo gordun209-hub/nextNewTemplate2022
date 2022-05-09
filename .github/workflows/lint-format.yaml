@@ -10,3 +10,5 @@ jobs:
         uses: yarn run lint
       - name: Format
         uses: yarn run format
+      - name: Unit test
+        uses: yarn run test

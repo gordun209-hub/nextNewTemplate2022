@@ -9,7 +9,7 @@ import {
 	selectCount
 } from './counterSlice'
 
-function Counter() {
+function Counter(): JSX.Element {
 	const dispatch = useAppDispatch()
 	const count = useAppSelector(selectCount)
 	const [incrementAmount, setIncrementAmount] = useState('2')
@@ -19,11 +19,7 @@ function Counter() {
 	return (
 		<div>
 			<div>
-				<button
-					type='submit'
-					aria-label='Decrement value'
-					onClick={() => dispatch(decrement())}
-				>
+				<button type='submit' onClick={() => dispatch(decrement())}>
 					-
 				</button>
 				<span>{count}</span>

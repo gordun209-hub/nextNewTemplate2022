@@ -4,7 +4,7 @@ import Head from 'next/head'
 import Counter from '@/features/counter/Counter'
 
 export type Laa = {
-	num: string
+	Num: string
 }
 const Home: NextPage = () => {
 	return (

@@ -1,3 +1,4 @@
+/* eslint-disable cypress/require-data-selectors */
 describe('E2E Tests', () => {
 	it('should display the title', () => {
 		cy.visit('http://localhost:3000/')

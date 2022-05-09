@@ -7,8 +7,10 @@
 		"build": "next build",
 		"start": "next start",
 		"type-check": "tsc",
-		"test": "jest --watch",
-		"cypress": "cypress open"
+		"lint": "eslint . --fix --ignore-path .eslintignore",
+		"test": "jest ",
+		"cypress": "cypress open",
+		"format": "prettier --write '**/*.{ts,tsx,js,jsx,json,md,mdx}'"
 	},
 	"dependencies": {
 		"@reduxjs/toolkit": "^1.8.1",

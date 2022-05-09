@@ -1,0 +1,12 @@
+name: format and lint
+on: [push]
+jobs:
+  lint-format:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Lint
+        uses: yarn run lint
+      - name: Format
+        uses: yarn run format

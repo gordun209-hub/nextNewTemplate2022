@@ -7,8 +7,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Lint
-        run: yarn lint
+        run: npm run lint
       - name: Format
-        run: yarn  format
+        run: npm run format
       - name: Unit test
-        run: yarn test
+        run: npm run test

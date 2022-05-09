@@ -1,14 +1,16 @@
 name: format and lint
 on: [push]
 jobs:
-  lint-format:
-    runs-on: ubuntu-latest
+  simple_deployment_pipeline:
+    runs-on: ubuntu-20.04
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Lint
-        run: npm run lint
-      - name: Format
-        run: npm run format
-      - name: Unit test
-        run: npm run test
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: yarn install
+        run: yarn
+      - name: lint
+        run: npm run eslint
+      - name: format
+        run: yarn format
